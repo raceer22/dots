@@ -1,0 +1,49 @@
+output "DP-1" {
+    mode "3840x2160@59.997"
+    scale 2.0
+    // transform "180"
+    position x=0 y=0
+    variable-refresh-rate // on-demand=true
+    focus-at-startup
+    backdrop-color "#001100"
+    hot-corners {
+        // off
+        top-left
+        // top-right
+        // bottom-left
+        // bottom-right
+    }
+}
+output "DP-2" {
+    mode "1920x1080@60"
+    scale 2.0
+    transform "90"
+    position x=-1080 y=0
+    variable-refresh-rate // on-demand=true
+    focus-at-startup
+    backdrop-color "#001100"
+    hot-corners {
+        // off
+        top-left
+        // top-right
+        // bottom-left
+        // bottom-right
+    }
+}
+
+output "HDMI-A-1" {
+    mode "1920x1080@60"
+    scale 1.0
+    // transform "180"
+    position x=3840 y=0
+    variable-refresh-rate // on-demand=true
+    focus-at-startup
+    backdrop-color "#001100"
+    hot-corners {
+        // off
+        top-left
+        // top-right
+        // bottom-left
+        // bottom-right
+    }
+}

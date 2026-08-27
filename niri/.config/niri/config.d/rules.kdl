@@ -1,0 +1,52 @@
+window-rule {
+  open-maximized true
+}
+
+window-rule {
+    match app-id=r#"^noctalia-"#
+    open-floating true
+}
+window-rule {
+    match app-id=r#"^org\.gnome\.Nautilus$"#
+    open-floating true
+    default-column-width { proportion 0.5; }
+    default-window-height { proportion 0.4; }
+}
+
+// Noctalia
+window-rule {
+  geometry-corner-radius 20
+    open-maximized true
+
+  clip-to-geometry true
+  opacity 0.9
+  draw-border-with-background false
+
+    background-effect {
+                      blur true
+                      xray false
+                      noise 0.03
+                      saturation 1.5
+
+    }
+}
+
+// Floating Noctalia settings window.
+window-rule {
+  match app-id="dev.noctalia.Noctalia"
+  open-floating true
+  default-column-width { fixed 1080; }
+  default-window-height { fixed 920; }
+}
+
+debug {
+  // Allows notification actions and window activation from Noctalia.
+  honor-xdg-activation-with-invalid-serial
+}
+
+window-rule {
+    match app-id="pavucontrol"
+    match app-id="blueman-manager"
+    match title="Picture-in-Picture"
+    open-floating true
+}

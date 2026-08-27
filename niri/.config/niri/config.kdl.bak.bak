@@ -1,0 +1,10 @@
+// include "config.d/outputs.kdl"
+// include "config.d/autostart.kdl"
+// include "config.d/layout.kdl"
+// include "config.d/rules.kdl"
+// include "config.d/binds.kdl"
+
+prefer-no-csd
+hotkey-overlay {
+    skip-at-startup
+}

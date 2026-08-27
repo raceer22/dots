@@ -1,0 +1,7 @@
+niri
+noctalia
+doom
+nvim
+hypr
+ranger
+zen
