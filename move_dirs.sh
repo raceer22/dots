@@ -5,5 +5,4 @@ while IFS= read -r app || [ -n "$app" ]; do
 
   mkdir -p "$app/.config"
   cp -r "$HOME/.config/$app" "$app/.config/"
-
 done <apps.txt
