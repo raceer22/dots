@@ -1,11 +1,8 @@
 window-rule {
-  open-maximized true
-}
-
-window-rule {
     match app-id=r#"^noctalia-"#
     open-floating true
 }
+
 window-rule {
     match app-id=r#"^org\.gnome\.Nautilus$"#
     open-floating true
@@ -13,10 +10,15 @@ window-rule {
     default-window-height { proportion 0.4; }
 }
 
+window-rule {
+    match app-id="zen-browser"
+    open-maximized true
+}
+
 // Noctalia
 window-rule {
   geometry-corner-radius 20
-    open-maximized true
+    // open-maximized true
 
   clip-to-geometry true
   opacity 0.9
