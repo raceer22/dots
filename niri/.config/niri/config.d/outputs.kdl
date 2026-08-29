@@ -1,5 +1,6 @@
-output "DP-1" {
+output "DP-3" {
     mode "3840x2160@59.997"
+    // mode "1920x1080@60"
     scale 1.5
     position x=1080 y=0
     variable-refresh-rate // on-demand=true
@@ -19,6 +20,9 @@ output "DP-2" {
     backdrop-color "#001100"
     hot-corners {
         top-left
+    }
+    layout {
+      default-column-width { proportion 1.0; }
     }
 }
 

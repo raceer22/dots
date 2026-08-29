@@ -9,7 +9,8 @@ binds {
     // Noctalia v5 pikakomennot
     Mod+Space { spawn "noctalia-shell" "ipc" "launcher" "toggle"; }
     Mod+Escape { spawn "noctalia-shell" "ipc" "session-menu" "toggle"; }
-    Mod+V { spawn "noctalia-shell" "ipc" "clipboard" "toggle"; }
+    // Mod+Shift+V { spawn "noctalia-shell" "ipc" "clipboard" "toggle"; }
+    Mod+Control+V { spawn "noctalia" "msg" "panel-toggle" "clipboard"; }
     Mod+B { spawn "noctalia" "msg" "bar-toggle"; }
 
     // IPC Keybinds
