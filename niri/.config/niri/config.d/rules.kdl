@@ -35,6 +35,16 @@ window-rule {
 }
 
 window-rule {
+  match title=r#"^Extension: \(Bitwarden Password Manager\) - Bitwarden — Zen Browser$"#
+  open-floating true
+}
+
+window-rule {
+  match title=r#".*Bitwarden.*"#
+  open-floating true
+}
+
+window-rule {
     match app-id=r#"^org\.gnome\.Nautilus$"#
     open-floating true
     default-column-width { proportion 0.5; }

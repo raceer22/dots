@@ -1,0 +1,323 @@
+[bar]
+order = [ "default", "custom" ]
+
+    [bar.custom]
+    enabled = false
+
+    [bar.default]
+    font_weight = 700
+    margin_ends = 0
+    radius_top_left = 0
+    radius_top_right = 0
+    thickness = 25
+    widget_spacing = 32
+
+        [bar.default.monitor.DP-1]
+
+        [bar.default.monitor.DP-2]
+        enabled = false
+
+        [bar.default.monitor.HDMI-A-1]
+        enabled = false
+
+[desktop_widgets]
+schema_version = 2
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget]
+
+[dock]
+active_monitor_only = true
+auto_hide = true
+enabled = true
+icon_size = 38
+magnification_scale = 1.850000012665987
+radius_bottom_left = 0
+radius_bottom_right = 0
+reserve_space = false
+
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = false
+    timeout = 0.0
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = false
+    timeout = 0.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = true
+    locked_timeout = 60.0
+    timeout = 660.0
+
+[keybinds]
+down = [ "Down", "Ctrl+j" ]
+left = [ "Left", "Ctrl+h" ]
+right = [ "Right", "Ctrl+l" ]
+up = [ "Up", "Ctrl+k" ]
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [
+    "lockscreen-login-box@DP-3",
+    "lockscreen-login-box@HDMI-A-1",
+    "lockscreen-login-box@DP-1",
+    "lockscreen-login-box@DP-2",
+    "lockscreen-widget-0000000000000001"
+]
+
+    [lockscreen_widgets.grid]
+    cell_size = 64
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 943.5
+    output = "DP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-2"]
+    box_height = 196.0
+    box_width = 720.0
+    cx = 540.0
+    cy = 1630.0
+    enabled = false
+    output = "DP-2"
+    placement_height = 1920.0
+    placement_width = 1080.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-2".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-3"]
+    box_height = 70.0
+    box_width = 400.0
+    cx = 1280.0
+    cy = 1011.0
+    output = "DP-3"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-3".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "compact"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 894.0
+    enabled = false
+    output = "HDMI-A-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 192.0
+    box_width = 384.0
+    cx = 1280.0
+    cy = 464.0
+    output = "DP-3"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+        background_opacity = 0.0
+
+[nightlight]
+enabled = true
+temperature_night = 3000
+
+[plugins]
+enabled = [ "kenn/keybind-cheatsheet" ]
+
+[shell]
+app_icon_colorize = true
+avatar_path = "/home/raceer/Pictures/pfp/draken.jpg"
+font_family = "Adwaita Mono"
+
+    [shell.launcher]
+    app_grid = true
+    show_app_origin_indicator = false
+
+        [shell.launcher.providers.emoji]
+        global = true
+
+        [shell.launcher.providers.wallpaper]
+        global = true
+
+    [shell.panel]
+    control_center_placement = "floating"
+    open_near_click_control_center = true
+
+[theme]
+builtin = "Nord"
+community_palette = "Creamy Forest"
+mode = "dark"
+source = "community"
+wallpaper_scheme = "muted"
+
+    [theme.templates]
+    builtin_ids = [ "emacs", "gtk3", "gtk4", "kitty", "niri", "qt" ]
+    community_ids = [
+        "opencode",
+        "zen-browser",
+        "discord",
+        "telegram",
+        "blender",
+        "gimp",
+        "neovim",
+        "obsidian",
+        "vscode",
+        "steam",
+        "obs"
+    ]
+
+[wallpaper]
+directory = "/home/raceer/Pictures/Wallpapers"
+
+    [wallpaper.default]
+    path = "/home/raceer/Pictures/Wallpapers/Dark/photography-macro-grass-green-water_drop-200990.jpeg"
+
+    [wallpaper.last]
+    path = "/home/raceer/Pictures/Wallpapers/Dark/photography-macro-grass-green-water_drop-200990.jpeg"
+
+    [wallpaper.monitors.DP-1]
+    path = "/home/raceer/Pictures/Wallpapers/Dark/photography-macro-grass-green-water_drop-200990.jpeg"
+
+    [wallpaper.monitors.DP-2]
+    path = "/home/raceer/Pictures/Wallpapers/Dark/photography-macro-grass-green-water_drop-200990.jpeg"
+
+    [wallpaper.monitors.DP-3]
+    path = "/home/raceer/Pictures/Wallpapers/Dark/photography-macro-grass-green-water_drop-200990.jpeg"
+
+    [wallpaper.monitors.HDMI-A-1]
+    path = "/home/raceer/Pictures/Wallpapers/Dark/photography-macro-grass-green-water_drop-200990.jpeg"
+
+    [[wallpaper.favorite]]
+    community_palette = "Gruvbox Material Hard"
+    palette_source = "community"
+    path = "/home/raceer/Pictures/Wallpapers/Light/minecraft-blocks-5120x5120-23838.jpg"
+    theme_mode = "dark"
+
+    [[wallpaper.favorite]]
+    community_palette = "Oxide"
+    palette_source = "community"
+    path = "/home/raceer/Pictures/Wallpapers/Light/J4yn6Ap.jpeg"
+    theme_mode = "dark"
+
+    [[wallpaper.favorite]]
+    builtin_palette = "Nord"
+    palette_source = "builtin"
+    path = "/home/raceer/Pictures/Wallpapers/Dark/1r1kk9qi00961.png"
+    theme_mode = "dark"
+
+    [[wallpaper.favorite]]
+    community_palette = "Creamy Forest"
+    palette_source = "community"
+    path = "/home/raceer/Pictures/Wallpapers/Dark/photography-macro-grass-green-water_drop-200990.jpeg"
+    theme_mode = "dark"
+
+    [[wallpaper.favorite]]
+    community_palette = "Oxide"
+    palette_source = "community"
+    path = "/home/raceer/Pictures/Wallpapers/Light/woods-forest-tall-trees-fire-effect-landscape-digital-6143x4100-5827.jpg"
+    theme_mode = "dark"
+
+    [[wallpaper.favorite]]
+    path = "/home/raceer/Pictures/Wallpapers/Light/japan-artistic-5120x2880-25406.jpg"
+    theme_mode = "auto"
+
+[widget.media]
+enabled = false
+
+[widget.network]
+show_label = false
+
+[widget.volume]
+show_label = false
+
+[widget.workspaces]
+style = "minimal"

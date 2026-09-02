@@ -9,3 +9,6 @@ while IFS= read -r app || [ -n "$app" ]; do
   echo "Stowing: $app"
   stow -S "$app" -t "$HOME" -v
 done <apps.txt
+
+ln -s tmux.conf ~/.tmux.conf
+ln -s .zshrc ~/.zshrc
