@@ -158,6 +158,8 @@ alias gc='git commit -v'
 alias gca='git commit -v --amend'
 alias glog="git log --oneline --graph --decorate --all"
 
+alias shredd='shred -u -z -n 3'
+
 # ── Environment ───────────────────────────────────────────────────────────────
 export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 export EDITOR="nvim"
@@ -205,3 +207,4 @@ serve() { python3 -m http.server "${1:-8000}"; }
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+

@@ -4,6 +4,7 @@ binds {
     Mod+E      { spawn "nautilus"; }
     Mod+N      { spawn "nvim"; }
 
+
     // --- Noctalia Shell Integration ---
     Mod+D         { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
     Mod+Shift+Escape { spawn-sh "noctalia msg panel-toggle session"; }
@@ -12,6 +13,8 @@ binds {
     Mod+B         { spawn "noctalia" "msg" "bar-toggle"; }
     Mod+S         { spawn-sh "noctalia msg panel-toggle control-center"; }
     Mod+Control+S { spawn-sh "noctalia msg settings-toggle"; }
+    Mod+F1 { spawn "noctalia" "msg" "panel-toggle" "kenn/keybind-cheatsheet:cheatsheet"; }
+    Mod+Control+D { spawn "noctalia" "msg" "panel-toggle" "nightwatch75/file-search:panel"; }
 
     // --- Brightness & Audio Controls ---
     XF86MonBrightnessUp   { spawn-sh "noctalia msg brightness-up"; }
