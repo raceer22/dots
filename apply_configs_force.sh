@@ -10,5 +10,12 @@ while IFS= read -r app || [ -n "$app" ]; do
   stow -S "$app" -t "$HOME" -v
 done <apps.txt
 
-ln -s tmux.conf ~/.tmux.conf
-ln -s .zshrc ~/.zshrc
+DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+TMUX_DEST="$HOME/.tmux.conf"
+ZSH_DEST="$HOME/.zshrc"
+
+rm -f "$TMUX_DEST" "$ZSH_DEST"
+
+ln -s "$DOTFILES_DIR/tmux.conf" "$TMUX_DEST"
+ln -s "$DOTFILES_DIR/.zshrc" "$ZSH_DEST"
