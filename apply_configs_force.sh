@@ -17,5 +17,5 @@ ZSH_DEST="$HOME/.zshrc"
 
 rm -f "$TMUX_DEST" "$ZSH_DEST"
 
-ln -s "$DOTFILES_DIR/tmux.conf" "$TMUX_DEST"
-ln -s "$DOTFILES_DIR/.zshrc" "$ZSH_DEST"
+ln -sfr tmux.conf "$TMUX_DEST"
+ln -sfr .zshrc.fedora "$ZSH_DEST"
