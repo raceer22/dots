@@ -5,3 +5,4 @@ nvim
 hypr
 ranger
 kitty
+kanshi
