@@ -1,6 +1,6 @@
 #!/bin/bash
 
-while IFS= read -r app || [ -n "$app" ]; do
+while IFS= read -r stow_list || [ -n "$app" ]; do
   [[ -z "$app" || "$app" =~ ^# ]] && continue
 
   target_dir="$HOME/.config/$app"

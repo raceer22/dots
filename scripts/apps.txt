@@ -1,8 +1,8 @@
+doom
+hypr
+kanshi
+kitty
 niri
 noctalia
-doom
 nvim
-hypr
 ranger
-kitty
-kanshi
