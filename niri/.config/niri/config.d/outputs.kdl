@@ -1,0 +1,22 @@
+output "DP-3" {
+    focus-at-startup
+    hot-corners {
+        off
+    }
+}
+
+output "DP-2" {
+    hot-corners {
+        top-left
+    }
+    layout {
+      default-column-width { proportion 1.0; }
+    }
+}
+
+output "HDMI-A-1" {
+    hot-corners {
+        top-right
+    }
+}
+
