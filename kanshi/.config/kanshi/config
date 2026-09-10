@@ -1,0 +1,73 @@
+output "Samsung Display Corp. 0x4158 Unknown" {
+  mode 1920x1080@60
+  scale 1.2
+  alias $INTERNAL
+}
+
+output "DP-3" {
+    mode 3840x2160@60
+    scale 1.5
+}
+
+output "DP-2" {
+    mode 1920x1080@60
+    scale 1.0
+}
+
+output DP-1 {
+    mode 2560x1440@60
+    scale 1
+}
+
+output "HDMI-A-1" {
+    mode 1920x1080@60
+    scale 1.0
+}
+
+output "Lenovo Group Limited LEN P27h-10 0x01010101" {
+    mode 2560x1440@60
+    scale 1
+    alias $LENOVO
+}
+
+profile internal {
+    output $INTERNAL enable
+}
+
+profile dock {
+    output $INTERNAL {
+        enable
+        position 512,1440
+    }
+    output $LENOVO {
+        enable
+        position 0,0
+    }
+}
+
+profile dock_2 {
+    output $INTERNAL {
+        enable
+        position 512,1440
+    }
+    output DP-1 {
+        enable
+        position 0,0
+    }
+}
+
+profile home {
+    output DP-3 {
+        enable
+        position 1080,0
+    }
+    output DP-2 {
+        enable
+        position 0,0
+        transform 90
+    }
+    output HDMI-A-1 {
+        enable
+        position 3640,135
+    }
+}
