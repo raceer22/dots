@@ -256,59 +256,7 @@ wallpaper_scheme = "muted"
     ]
 
 [wallpaper]
-directory = "/home/raceer/Pictures/Wallpapers"
-
-    [wallpaper.default]
-    path = "/home/raceer/Pictures/Wallpapers/Dark/photography-macro-grass-green-water_drop-200990.jpeg"
-
-    [wallpaper.last]
-    path = "/home/raceer/Pictures/Wallpapers/Dark/photography-macro-grass-green-water_drop-200990.jpeg"
-
-    [wallpaper.monitors.DP-1]
-    path = "/home/raceer/Pictures/Wallpapers/Dark/photography-macro-grass-green-water_drop-200990.jpeg"
-
-    [wallpaper.monitors.DP-2]
-    path = "/home/raceer/Pictures/Wallpapers/Dark/photography-macro-grass-green-water_drop-200990.jpeg"
-
-    [wallpaper.monitors.DP-3]
-    path = "/home/raceer/Pictures/Wallpapers/Dark/photography-macro-grass-green-water_drop-200990.jpeg"
-
-    [wallpaper.monitors.HDMI-A-1]
-    path = "/home/raceer/Pictures/Wallpapers/Dark/photography-macro-grass-green-water_drop-200990.jpeg"
-
-    [[wallpaper.favorite]]
-    community_palette = "Gruvbox Material Hard"
-    palette_source = "community"
-    path = "/home/raceer/Pictures/Wallpapers/Light/minecraft-blocks-5120x5120-23838.jpg"
-    theme_mode = "dark"
-
-    [[wallpaper.favorite]]
-    community_palette = "Oxide"
-    palette_source = "community"
-    path = "/home/raceer/Pictures/Wallpapers/Light/J4yn6Ap.jpeg"
-    theme_mode = "dark"
-
-    [[wallpaper.favorite]]
-    builtin_palette = "Nord"
-    palette_source = "builtin"
-    path = "/home/raceer/Pictures/Wallpapers/Dark/1r1kk9qi00961.png"
-    theme_mode = "dark"
-
-    [[wallpaper.favorite]]
-    community_palette = "Creamy Forest"
-    palette_source = "community"
-    path = "/home/raceer/Pictures/Wallpapers/Dark/photography-macro-grass-green-water_drop-200990.jpeg"
-    theme_mode = "dark"
-
-    [[wallpaper.favorite]]
-    community_palette = "Oxide"
-    palette_source = "community"
-    path = "/home/raceer/Pictures/Wallpapers/Light/woods-forest-tall-trees-fire-effect-landscape-digital-6143x4100-5827.jpg"
-    theme_mode = "dark"
-
-    [[wallpaper.favorite]]
-    path = "/home/raceer/Pictures/Wallpapers/Light/japan-artistic-5120x2880-25406.jpg"
-    theme_mode = "auto"
+directory = "/home/raceer/Pictures/wallpapers"
 
 [widget.media]
 enabled = false
