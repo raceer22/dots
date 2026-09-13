@@ -1,3 +1,8 @@
 **/themes/noctalia.conf
 **/noctalia.kdl
 **/matugen.lua
+
+# Noctalia & Matugen dynamic themes
+kitty/.config/kitty/themes/noctalia.conf
+niri/.config/niri/noctalia.kdl
+nvim/.config/nvim/lua/matugen.lua
