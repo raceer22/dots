@@ -75,3 +75,8 @@ window-rule {
     match title="Picture-in-Picture"
     open-floating true
 }
+
+layer-rule {
+  match namespace="^noctalia-backdrop"
+  place-within-backdrop true
+}

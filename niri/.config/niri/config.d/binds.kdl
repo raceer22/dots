@@ -2,7 +2,8 @@ binds {
     // --- Applications ---
     Mod+Return { spawn "kitty"; }
     Mod+E      { spawn "nautilus"; }
-    Mod+N      { spawn "nvim"; }
+    Mod+N      { spawn "kitty" "nvim"; }
+    Mod+B      { spawn "zen-browser"; }
 
 
     // --- Noctalia Shell Integration ---
@@ -10,7 +11,7 @@ binds {
     Mod+Shift+Escape { spawn-sh "noctalia msg panel-toggle session"; }
     Mod+Control+V { spawn "noctalia" "msg" "panel-toggle" "clipboard"; }
     Mod+X         { spawn "noctalia" "msg" "panel-toggle" "session"; }
-    Mod+B         { spawn "noctalia" "msg" "bar-toggle"; }
+    Mod+Shift+B         { spawn "noctalia" "msg" "bar-toggle"; }
     Mod+S         { spawn-sh "noctalia msg panel-toggle control-center"; }
     Mod+Control+S { spawn-sh "noctalia msg settings-toggle"; }
     Mod+F1 { spawn "noctalia" "msg" "panel-toggle" "kenn/keybind-cheatsheet:cheatsheet"; }
