@@ -34,6 +34,11 @@ input {
     }
 }
 
+cursor {
+  hide-when-typing
+  hide-after-inactive-ms 2000
+}
+
 layout {
     gaps 20
 
