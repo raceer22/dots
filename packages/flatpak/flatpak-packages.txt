@@ -1,2 +1,10 @@
+com.bitwarden.desktop
 com.brave.Browser
+com.jgraph.drawio.desktop
+com.microsoft.Edge
+io.github.ungoogled_software.ungoogled_chromium
+it.mijorus.gearlever
 md.obsidian.Obsidian
+net.ankiweb.Anki
+org.chromium.Chromium
+org.pvermeer.WebAppHub
