@@ -1,0 +1,11 @@
+niri
+noctalia
+doom
+nvim
+hypr
+ranger
+kitty
+kanshi
+zathura
+tmux
+zsh-fedora

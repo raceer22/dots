@@ -7,3 +7,5 @@ ranger
 kitty
 kanshi
 zathura
+tmux
+zsh-ubuntu

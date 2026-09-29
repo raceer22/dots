@@ -1,8 +1,6 @@
-**/themes/noctalia.conf
-**/noctalia.kdl
-**/matugen.lua
-
-# Noctalia & Matugen dynamic themes
-kitty/.config/kitty/themes/noctalia.conf
-niri/.config/niri/noctalia.kdl
-nvim/.config/nvim/lua/matugen.lua
+# Noctalia & Matugen dynamic theme outputs
+# These files are generated locally and should not be tracked in the repository.
+stow/kitty/.config/kitty/themes/noctalia.conf
+stow/niri/.config/niri/noctalia.kdl
+stow/nvim/.config/nvim/lua/matugen.lua
+stow/zathura/.config/zathura/noctaliarc

@@ -6,6 +6,14 @@
 
 set -euo pipefail
 
+script_dir=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)
+repo_root=$(cd -- "$script_dir/../.." && pwd)
+[[ -d "$repo_root/stow/zsh-fedora" ]] || { printf 'Error: repository Stow packages not found.\n' >&2; exit 1; }
+if (($# == 1)) && [[ $1 == --help || $1 == -h ]]; then
+  printf 'Usage: %s\n' "${0##*/}"
+  exit 0
+fi
+
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
