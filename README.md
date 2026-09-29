@@ -13,13 +13,7 @@ This repository keeps machine-specific package selection, Stow-managed configura
 
 This repository intentionally does not keep loose application package trees at the root; packages live under `stow/`, and package-manager outputs stay under `packages/`.
 
-## Supported host aliases
-
-The stable host aliases currently tracked in this repository are:
-
-- `fedora`
-- `ubuntu`
-- `workstation`
+## Host aliases
 
 Each alias maps to a manifest under `hosts/<alias>/stow-packages.txt`. Those manifests are the source of truth for what gets stowed on a machine. They must be updated when adding or removing packages for that host.
 
@@ -45,7 +39,7 @@ Rules:
 
 - One package name per line.
 - Blank lines and comments are ignored.
-- A host may not select both `zsh-fedora` and `zsh-ubuntu`.
+- A host may select only one `zsh-*` stow directory.
 - Package names must match a directory under `stow/`.
 
 ## Normal setup flow
@@ -113,12 +107,6 @@ printf '%s\n' 'myapp' >> /path/to/dots/hosts/workstation/stow-packages.txt
 
 Keep package contents inside the package directory itself. Avoid creating loose files or directories at the repository root for an app.
 
-## Handling `noctaliarc`
-
-`stow/zathura/noctaliarc` is intentionally preserved. It is a Zathura theme file used alongside `zathurarc`, not a stale root-level artifact. The repository keeps it in the `zathura` package so the package layout matches the application's expected home-relative configuration path.
-
-If a future change needs to rename or replace it, do so only after confirming the consumer and updating the package contents and documentation together.
-
 ## Conflict recovery
 
 Stow is intentionally conservative: conflicts fail by default. To back up recognized conflict paths automatically, explicitly pass `--backup-conflicts`:
@@ -129,11 +117,3 @@ Stow is intentionally conservative: conflicts fail by default. To back up recogn
 ```
 
 The helper moves only exact conflict paths it can safely identify. Backups are placed under `~/.config/dots-backups/<timestamp>/` with paths relative to `$HOME` preserved; symlinks are moved as links. A dry run reports planned moves without changing files or creating directories. Ambiguous diagnostics stop before any move. If a move or the follow-up preflight fails, the helper attempts to restore paths already moved.
-
-## Generated theme and machine-specific files
-
-Some generated or machine-specific theme outputs are intentionally ignored in `.gitignore` so they are not tracked as part of the repository. This policy is kept explicit and separate from package reproducibility decisions.
-
-## Follow-up decisions intentionally left out of scope
-
-The repository does not yet enforce a strict package reproducibility policy for package-manager manifests, and the generated-theme workflow remains a separate decision. Those are policy topics, not prerequisites for safe repository layout or host-based package selection.
