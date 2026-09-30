@@ -1,7 +1,7 @@
 // Global
+
 window-rule {
   geometry-corner-radius 20
-    // open-maximized true
 
   clip-to-geometry true
   opacity 0.9
@@ -60,8 +60,8 @@ window-rule {
 window-rule {
   match app-id="dev.noctalia.Noctalia"
   open-floating true
-  default-column-width { fixed 1080; }
-  default-window-height { fixed 920; }
+  default-column-width { proportion 0.5; }
+  default-window-height { proportion 0.8; }
 }
 
 debug {
