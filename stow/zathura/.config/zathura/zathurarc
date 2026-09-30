@@ -1,2 +1,4 @@
 set guioptions none
 set selection-notification false
+
+set scroll-page-aware "true"
