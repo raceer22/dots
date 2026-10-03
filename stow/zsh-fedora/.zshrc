@@ -68,6 +68,8 @@ plugins=(
   zsh-bat
 )
 
+zstyle :omz:plugins:ssh-agent quiet yes
+
 source "$ZSH/oh-my-zsh.sh"
 
 # ── Plugin config ─────────────────────────────────────────────────────────────
