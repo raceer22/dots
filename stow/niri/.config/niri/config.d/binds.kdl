@@ -32,9 +32,18 @@ binds {
     XF86AudioNext        allow-when-locked=true { spawn-sh "playerctl next"; }
 
     // --- Screenshots ---
-    Mod+Shift+S { screenshot; }
+    // Mod+Shift+S { screenshot; }
     Ctrl+Print  { screenshot-screen; }
     Alt+Print   { screenshot-window; }
+    Mod+Shift+S {
+        // spawn "sh" "-c" "niri msg action screenshot -p=false --path - | satty --filename - --floating-hack --output-filename ~/Pictures/Screenshots/screenshot-$(date +'%Y-%m-%d_%H-%M-%S').png"
+// spawn "sh" "-c" "file=~/Pictures/Screenshots/screenshot-$(date +'%Y-%m-%d_%H-%M-%S').png; niri msg action screenshot -p=false --path \"$file\" && satty --filename \"$file\" --floating-hack"
+        spawn "sh" "-c" "grim -g \"$(slurp)\" -t ppm - | satty --filename - --floating-hack --output-filename ~/Pictures/Screenshots/screenshot-$(date +'%Y-%m-%d_%H-%M-%S').png"
+    }
+
+    Shift+Print {
+        spawn "sh" "-c" "grim -t ppm - | satty --filename - --fullscreen --output-filename ~/Pictures/Screenshots/screenshot-$(date +'%Y-%m-%d_%H-%M-%S').png"
+    }
 
     // --- Session & System ---
     Mod+Control+Tab repeat=false { toggle-overview; }

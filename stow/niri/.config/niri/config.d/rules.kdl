@@ -1,7 +1,8 @@
 // Global
 window-rule {
   geometry-corner-radius 20
-    // open-maximized true
+    open-maximized false
+    open-maximized-to-edges false
 
   clip-to-geometry true
   opacity 0.9
@@ -80,3 +81,11 @@ layer-rule {
   match namespace="^noctalia-backdrop"
   place-within-backdrop true
 }
+
+window-rule {
+    // Matches Resolve main window and project manager
+    match app-id=r#"(?i)resolve"#
+
+    open-floating true
+}
+
