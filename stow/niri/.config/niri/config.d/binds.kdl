@@ -4,18 +4,21 @@ binds {
     Mod+E      { spawn "nautilus"; }
     Mod+N      { spawn "kitty" "nvim"; }
     Mod+B      { spawn "zen-browser"; }
+    Mod+G      { spawn "gtk-launch" "org.chromium.Chromium.chromium-wah-yAM49DFf"; }
+    Mod+Z      { spawn "zathura"; }
+    Mod+Shift+N { spawn "kitty" "-e" "tmux" "new-session" "nvim"; }
 
 
     // --- Noctalia Shell Integration ---
     Mod+D         { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
     Mod+Shift+Escape { spawn-sh "noctalia msg panel-toggle session"; }
-    Mod+Control+V { spawn "noctalia" "msg" "panel-toggle" "clipboard"; }
+    Mod+Control+D { spawn "noctalia" "msg" "panel-toggle" "clipboard"; }
     Mod+X         { spawn "noctalia" "msg" "panel-toggle" "session"; }
     Mod+Shift+B         { spawn "noctalia" "msg" "bar-toggle"; }
     Mod+S         { spawn-sh "noctalia msg panel-toggle control-center"; }
     Mod+Control+S { spawn-sh "noctalia msg settings-toggle"; }
     Mod+F1 { spawn "noctalia" "msg" "panel-toggle" "kenn/keybind-cheatsheet:cheatsheet"; }
-    Mod+Control+D { spawn "noctalia" "msg" "panel-toggle" "nightwatch75/file-search:panel"; }
+    // Mod+Control+D { spawn "noctalia" "msg" "panel-toggle" "nightwatch75/file-search:panel"; }
 
     // --- Brightness & Audio Controls ---
     XF86MonBrightnessUp   { spawn-sh "noctalia msg brightness-up"; }
