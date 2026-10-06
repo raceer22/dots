@@ -232,6 +232,14 @@ font_family = "Adwaita Mono"
     control_center_placement = "floating"
     open_near_click_control_center = true
 
+[shell.launcher.dmenu.entry.workspaces]
+label = "Workspace Manager"
+prefix = "ws"
+glyph = "layout"
+freeform = true
+command = "ls -1 ~/.config/niri/layouts/ 2>/dev/null | sed 's/\\.json$//' | sed 's/^/restore /'"
+exec = "arg=\"{selection}\"; [ -z \"$arg\" ] && arg=\"{query}\"; ~/.local/bin/niri-layout $arg"
+
 [theme]
 builtin = "Nord"
 community_palette = "Creamy Forest"
