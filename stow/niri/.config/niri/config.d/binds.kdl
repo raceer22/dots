@@ -16,7 +16,7 @@ binds {
     Mod+X         { spawn "noctalia" "msg" "panel-toggle" "session"; }
     Mod+Shift+B         { spawn "noctalia" "msg" "bar-toggle"; }
     Mod+S         { spawn-sh "noctalia msg panel-toggle control-center"; }
-    Mod+Control+S { spawn-sh "noctalia msg settings-toggle"; }
+    // Mod+Control+S { spawn-sh "noctalia msg settings-toggle"; }
     Mod+F1 { spawn "noctalia" "msg" "panel-toggle" "kenn/keybind-cheatsheet:cheatsheet"; }
     // Mod+Control+D { spawn "noctalia" "msg" "panel-toggle" "nightwatch75/file-search:panel"; }
 
@@ -39,9 +39,10 @@ binds {
     Ctrl+Print  { screenshot-screen; }
     Alt+Print   { screenshot-window; }
     Mod+Shift+S {
-        // spawn "sh" "-c" "niri msg action screenshot -p=false --path - | satty --filename - --floating-hack --output-filename ~/Pictures/Screenshots/screenshot-$(date +'%Y-%m-%d_%H-%M-%S').png"
-// spawn "sh" "-c" "file=~/Pictures/Screenshots/screenshot-$(date +'%Y-%m-%d_%H-%M-%S').png; niri msg action screenshot -p=false --path \"$file\" && satty --filename \"$file\" --floating-hack"
-        spawn "sh" "-c" "grim -g \"$(slurp)\" -t ppm - | satty --filename - --floating-hack --output-filename ~/Pictures/Screenshots/screenshot-$(date +'%Y-%m-%d_%H-%M-%S').png"
+        spawn "sh" "-c" "grim -g \"$(slurp)\" -t png - | tee >(wl-copy) | satty --filename - --floating-hack --output-filename ~/Pictures/Screenshots/screenshot-$(date +'%Y-%m-%d_%H-%M-%S').png"
+    }
+    Mod+Control+S {
+        spawn "sh" "-c" "grim -g \"$(slurp -o)\" -t png - | tee >(wl-copy) | satty --filename - --output-filename ~/Pictures/Screenshots/screenshot-$(date +'%Y-%m-%d_%H-%M-%S').png"
     }
 
     Shift+Print {

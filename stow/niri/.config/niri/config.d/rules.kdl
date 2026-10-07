@@ -89,3 +89,10 @@ window-rule {
     open-floating true
 }
 
+window-rule {
+    match app-id=r#"satty"#
+    open-floating true
+    default-column-width { proportion 0.5; }
+    default-window-height { proportion 0.6; }
+}
+
